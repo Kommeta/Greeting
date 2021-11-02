@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+
+</head>
+
+<style>
+
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .new-font {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+    }
+
+    h2 {
+        color: rgb(7, 0, 7);
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+ 
+    .bolt-text {
+        font-weight: bold;
+    }
+
+    .name-text {
+        color: rgb(250, 239, 142);
+    }
+
+    .white-text {
+        color: white;
+    }
+
+
+    .gree {
+        background: #4e1f37;
+    }
+
+    .block1 {
+        width: 800px;
+        margin: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .block1.no-pading-top {
+        padding-top: 0;
+    }
+
+    .exp {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .nav li {
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+        cursor: pointer;
+        
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: rgb(250, 239, 142);
+    }       
+
+    .exp {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .exp li {
+        margin: 12px 0;
+    }
+
+    .activiti {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .activiti li {
+        background: url(./img/free-icon-check-mark-66936\ \(1\).png) no-repeat left center;
+        padding-left: 50px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        margin: 20px 0;
+    } 
+
+    .strength {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        column-count: 2;
+    }
+
+    .strength li {
+        background: url(./img/free-icon-checkmark-1828713\ \(2\).png) no-repeat left center;
+        padding-left: 50px;
+        padding-top: 2px;
+        padding-bottom: 5px;
+        margin: 20px 0;
+    } 
+
+    .blue {
+        background: rgb(209 210 228);
+    }
+
+    .rose {
+        background: rgb(230 208 204);
+    }
+
+    .green {
+        background: rgb(239 239 205);
+    }
+
+    .fiolet {
+        background: #d9befd;
+    }
+
+    .logo-img {
+        width: 800px;
+    }
+
+    .name-tag {
+        font-size: 28px;
+        letter-spacing: 10px;
+    }
+
+    .paragraph {
+        margin: 18px 0;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .hands-bg {
+        background-image: url("./img/vetka.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .circkle-img {
+        border-radius: 50%;
+    }
+
+    .img-conteiner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 15px 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 794px;
+        outline: none;
+        border: none;
+        border: 3px solid rgb(250, 239, 142);
+    }
+
+    textarea {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100px;
+    }
+    
+    input#submit {
+        width: 300px;
+        cursor: pointer;
+        background: rgb(250, 239, 142);
+        color: #571f3c;
+        font-size: 24px;
+    }
+
+    #gotop {
+         width: 64px;
+        height: 64px;
+        background: rgb(250, 239, 142);
+        color: #571f3c;
+        font-size: 43px;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        position: fixed;
+        bottom: 35px;
+        right: 30px;
+    }
+
+    .logo-conteiner {
+        width: 800px;
+        height: 550px;
+        background-image: url(./img/JOr3ekujAjc.jpg);
+        background-size: cover;
+        box-shadow: 280px 0px 120px -15px rgba(0, 0, 0, 0.8) inset;
+    }
+
+    .text-overlap {
+        position: relative;
+    padding: 30px 514px 0px 180px;
+    top: -342px;
+    margin: -155px;
+    font-size: 26px;
+    line-height: normal;
+    }
+
+    .text-two {
+        margin: 0px 86px 0px 86px;
+    }
+
+</style>
+
+<body class="new-font">
+    <div>
+        <div class="gree">
+            <div class="block1" id="navigation">
+                <ul class="name-text nav" style="padding-top: 20px">
+                    <li><span class="bolt-text name-text name-tag"> TANYA</span></li>
+                    <li><a href="#101">Опыт</a></li>
+                    <li><a href="#102">Достижения</a></li>
+                    <li><a href="#103">О личности</a></li>
+                    <li><a href="#104">Для связи</a></li>
+            
+        </ul>
+
+        <div class="logo-conteiner"></div>
+        
+        <p class="white-text paragraph text-overlap">
+            Человек обладающий многочисленными способностями в различных сферах жизнедеятельности. <br>
+            Желающая вырваться из оков трудовой рутины и быть оцененной по достоинству.</p>
+        </div>
+        
+            <div class="block1">       
+                <h1 class="white-text text-two">Дипломированный специалист - работающий не по специальности.</h1>
+            </div>
+        </div>
+
+        <div class="blue">
+            <div class="block1 no-pading-top" id="101">
+                <h2>Опыт работы: </h2>
+
+            <ul class="exp">
+                <li><span class="bolt-text">2013-2015 </span>- первая рутинная работа (первое разочарование)</li>
+                <li><span class="bolt-text">2015-2016 </span>- 2-я рутинная работа</li>
+                <li><span class="bolt-text">2016- сентябрь 2021 </span>- сама не понимаю почему так долго там задержалась.</li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="rose">
+            <div class="block1 no-pading-top" id="102">
+
+        <h2>Мои достижения:</h2>
+
+        <p>Итоги профессиональной деятельности</p>
+
+        <ul class="activiti">
+            <li><span class="bolt-text">Грамоты</span> </li>
+            <li><span class="bolt-text">Благодарности</span> </li>
+            <li><span class="bolt-text"> Повышение квалификации </span> </li>
+            <li><span class="bolt-text">Тренинги</span> </li>
+        </ul> 
+        </div>
+    </div>
+
+    <div class="green">    
+        <div class="block1 no-pading-top" id="103">
+
+        <h2>Мои сильные стороны:</h2>
+
+        <ul class="bolt-text strength">
+            <li>Сообразительная</li>
+            <li>Общительная</li>
+            <li>Любознательная</li>
+            <li>Стресоустойчивая</li>
+            <li>Неконфликтная</li>
+            <li>Компанейская</li>
+        </ul>
+        </div>
+    </div>
+        
+    <div class="hands-bg">    
+        <div class="block1 white-text">
+        
+            <h2 class="white-text">Мой принцип</h2>
+
+        <p> <span class="bolt-text"><i>Думай о смысле, а слова придут сами.</i></span></p>
+        </div>
+    </div>
+
+    <div class="fiolet">
+
+        <div class="block1 no-pading-top" id="104">
+        
+            <h2>Личное</h2>
+            <p class="paragraph">О жизни, о многочисленных увлечениях, о предпочтениях, о путешествиях, 
+            о том что видела или не видела, о том что делала или хочу сделать.</p>
+
+            <div class="img-conteiner">    
+
+                <img class="circkle-img" src="img\Без названия.jpg" alt="picture 1"
+                width="250px">
+                <img class="circkle-img" src="img\photo-1491485326079-8713ae1e00a9.jpg" alt="picture 2"
+                width="250px">
+                <img class="circkle-img" src="img\books_min.jpg" alt="picture 3"
+                width="250px">
+
+            </div>
+        </div>
+        
+    </div>
+
+        <div class="block1" id="105">
+            <h2>Контакт</h2>
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FIO" placeholder="ФИО">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Отправить"> 
+            </form>
+
+            <a id="gotop" href="#navigation">^</a>
+
+        </div>
+        
+    </div>    
+    
+</body>
+</html>
