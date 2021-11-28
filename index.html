@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width-850">
     <title>Greeting</title>
 
 </head>
@@ -13,6 +13,9 @@
     html, body {
         padding: 0;
         margin: 0;
+    }
+    .body{
+        min-width: 850px;
     }
     
     .new-font {
@@ -177,7 +180,7 @@
     }
 
     #contact-form input, #contact-form textarea {
-        padding: 15px 0;
+        padding: 15px 5px;
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: bold;
@@ -185,6 +188,7 @@
         outline: none;
         border: none;
         border: 3px solid rgb(250, 239, 142);
+        border-radius: 10px;
     }
 
     textarea {
@@ -201,11 +205,11 @@
     }
 
     #gotop {
-         width: 64px;
+        width: 64px;
         height: 64px;
         background: rgb(250, 239, 142);
         color: #571f3c;
-        font-size: 43px;
+        font-size: 46px;
         display: inline-block;
         text-decoration: none;
         font-weight: bold;
@@ -213,6 +217,7 @@
         position: fixed;
         bottom: 35px;
         right: 30px;
+        border-radius: 8px;
     }
 
     .logo-conteiner {
@@ -224,7 +229,7 @@
     }
 
     .text-overlap {
-        position: relative;
+    position: relative;
     padding: 30px 514px 0px 180px;
     top: -342px;
     margin: -155px;
@@ -339,7 +344,7 @@
     </div>
 
         <div class="block1" id="105">
-            <h2>Контакт</h2>
+            <h2>Связаться</h2>
             <form action="/" method="POST" id="contact-form">
                 <input type="text" name="FIO" placeholder="ФИО">
                 <input type="email" name="email" placeholder="Email">
